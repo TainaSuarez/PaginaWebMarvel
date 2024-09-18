@@ -1,0 +1,121 @@
+/* Regra geral para remover margens */
+* {
+    margin: 0;
+}
+
+/* Estilos gerais */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier', monospace;
+    text-transform: uppercase;
+}
+
+/* categorias */
+nav {
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+/* alinea categorias */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* color de categorias */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: space-between;
+
+}
+
+/* imagen marvel */
+.imagencapa {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20PX;
+}
+
+.segunda img {
+    width: 100%;
+    border-bottom: 1px;
+}
+
+.container {
+    display: flex; /* Flexbox para organizar los items en fila */
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+    align-items: flex-start; /* Alinea los elementos desde arriba */
+    flex-wrap: wrap; /* Permite que los elementos bajen a la siguiente fila si es necesario */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    margin-top: 20px; /* Espacio entre las imágenes y el contenido superior  */
+    margin-bottom: 20px; /* Espacio entre las imágenes y el contenido de "NEWS"  */
+}
+
+.item {
+    width: 18%; /* El ancho de cada imagen más su contenido (título y párrafo) */
+}
+
+.item img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+.item p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 14px; /* Tamaño del texto */
+    color: #fffefe; /* Color del texto */
+}
+
+.item p:last-child {
+    margin-top: 5px; /* Espacio entre el primer y segundo párrafo */
+}
+
+.news-section {
+    margin-top: 30px; /* Espacio extra sobre el texto "NEWS" */
+    font-size: 24px; /* Tamaño del texto de "NEWS" */
+    font-weight: bold; /* Negrita para destacar */
+    color: #fff; /* Color del texto, ajustable */
+    text-align: center; /* Centra el texto */
+    background: linear-gradient(to bottom, black, #333); /* Gradiente de fondo negro a gris oscuro */
+    padding: 20px; /* Espacio interno para la sección de noticias */
+}
+
+.news-section h2 {
+    font-size: 24px; /* Tamaño del texto de "NEWS" */
+    font-weight: bold; /* Negrita para destacar el título "NEWS" */
+    text-align: center; /* Centramos el título "NEWS" */
+    color: #fff; /* Color del texto del título */
+    margin-bottom: 20px; /* Espacio inferior entre "NEWS" y las noticias */
+}
+
+.news-item {
+    display: flex; /* Flexbox para colocar la imagen y el texto en fila */
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Alineación vertical al centro */
+    margin-bottom: 30px; /* Margen inferior entre cada noticia */
+}
+
+.news-item img {
+    width: 45%; /* Ancho de la imagen para que ocupe casi la mitad del contenedor */
+    height: auto; /* Mantener las proporciones de la imagen */
+}
+
+.news-item p {
+    width: 50%; /* Ancho del texto de la noticia */
+    font-size: 18px; /* Tamaño de fuente del texto */
+    font-weight: bold; /* Negrita para destacar el texto de las noticias */
+    color: #fff; /* Color del texto */
+    padding-left: 20px; /* Espacio entre la imagen y el texto */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(112, 108, 108, 0.438);
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
